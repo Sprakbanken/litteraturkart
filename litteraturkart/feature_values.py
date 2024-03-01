@@ -1495,8 +1495,9 @@ def get_pin_icon(feature_code: str, feature_class: str = None):
     if feature_class is None:
         feature_class = get_feature_class(feature_code)
     icon = feature_icon_map.get(feature_class, "location-dot")
+    color = feature_colour_map.get(feature_class, "blue")
     return folium.Icon(
-        color=feature_colour_map.get(feature_class, "blue"),
-        icon=feature_icon_map.get(feature_class, "location-dot"),
+        color=color,
+        icon=icon,
         prefix="fa",
     )

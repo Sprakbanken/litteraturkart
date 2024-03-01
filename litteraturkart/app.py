@@ -5,7 +5,6 @@ import folium
 import pandas as pd
 import streamlit as st
 import streamlit_folium
-from string import punctuation
 
 from litteraturkart import utils
 
@@ -66,7 +65,6 @@ def main():
     settings.write(f"Totalt antall publikasjoner i korpuset: **{corpus.shape[0]}**")
     subcorpus = utils.corpus_parameters(corpus, settings)
     docid = subcorpus.dhlabid.values[0]
-    title = subcorpus.title.values[0]
 
     # %%
     settings.write("### Kartvisning")
