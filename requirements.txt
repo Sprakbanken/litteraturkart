@@ -3,6 +3,7 @@
 dhlab==2.31.0
 folium==0.16.0
 langcodes==3.3.0
+language-data==1.1.0
 pandas==2.2.1
 pyarrow==15.0.0
 requests==2.31.0

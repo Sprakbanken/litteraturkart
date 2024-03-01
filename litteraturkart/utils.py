@@ -13,8 +13,11 @@ from langcodes import Language
 from io import BytesIO
 from string import punctuation
 
-from litteraturkart.feature_values import (
-    feature_classes, feature_codes, feature_colour_map)
+try:
+    from litteraturkart.feature_values import (
+        feature_classes, feature_codes, feature_colour_map)
+except ModuleNotFoundError:
+    from feature_values import feature_classes, feature_codes, feature_colour_map
 
 
 def format_filename(full_title: str) -> str:

@@ -6,9 +6,10 @@ import pandas as pd
 import streamlit as st
 import streamlit_folium
 
-from litteraturkart import utils
-
-# import webbrowser
+try:
+    from litteraturkart import utils
+except ModuleNotFoundError:
+    import utils
 
 
 logging.basicConfig(
