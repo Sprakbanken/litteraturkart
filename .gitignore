@@ -162,3 +162,4 @@ cython_debug/
 ## CICD
 publish.sh
 deployment.yaml
+deployment_template.yaml
